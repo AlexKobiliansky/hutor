@@ -1,0 +1,59 @@
+.recipe-item
+  font-size: 20px
+  padding-left: 120px
+  padding-right: 150px
+  padding-bottom: 40px
+  &-img
+    margin: 30px 0 15px
+    height: 400px
+    +bg-cover
+  &-meta
+    margin-bottom: 35px
+    &>div
+      font-size: 16px
+      display: inline-block
+      text-transform: uppercase
+      padding-top: 4px
+      padding-bottom: 10px
+    .meta-portions
+      padding-left: 30px
+      padding-right: 28px
+      border-bottom: 1px solid transparent
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 22px
+        height: 16px
+        background-image: url("../img/icons/meta-portions-icon.png")
+        +bg-cover()
+        left: 0
+    .meta-time
+      padding-left: 45px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 16px
+        height: 16px
+        background-image: url("../img/icons/meta-time-icon.png")
+        +bg-cover()
+        left: 20px
+        top: 5px
+
+
+.recipe-item-ingredients
+  margin-bottom: 30px
+  ul
+    margin-top: 15px
+  li
+    display: table
+    width: 100%
+    border-bottom: 1px solid #d3d3d3
+    &>div
+      display: table-cell
+      vertical-align: middle
+      padding: 5px 2px
+    .ingr-name
+      width: 83%
+      padding-right: 15px

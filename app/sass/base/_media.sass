@@ -21,6 +21,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .recipe-item
+    padding-left: 30px
+    padding-right: 60px
+
   .recipelist-item-content
     padding-left: 10px
 
@@ -64,6 +68,16 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .recipe-item
+    font-size: 16px
+    padding-left: 20px
+    padding-right: 0
+    &-img
+      height: 290px
+
+  .recipe-item-ingredients li .ingr-name
+    width: 75%
+
   .recipelist-item
     &-img
       float: none
@@ -94,9 +108,6 @@
 
   .recipelist-item-ingredients
     width: 100%
-
-
-
 
   .product-thumbs-wrap
     margin-bottom: 40px
@@ -201,6 +212,11 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .recipe-item
+    padding-left: 0
+    &-meta
+      margin-bottom: 15px
 
   .order-wrap
     .callback
