@@ -1,0 +1,149 @@
+
+.sidebar
+  padding-right: 20px
+
+.sidebar-content-wrap
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 248px
+    height: 548px
+    background-image: url('../img/bg-side-catalog.png')
+    +bg-cover()
+    left: -110px
+    top: 10px
+    transform: rotate(-20deg)
+
+
+.ishome
+  .sidebar-content-wrap
+    &:before
+      top: -170px
+      left: -80px
+      transform: none
+
+
+
+.side-catalog
+  border-top: 6px solid $light-green
+  background-color: #fff
+  padding: 30px 20px 10px
+  position: relative
+  box-shadow: 10px 5px 35px 0 rgba(#000, .15)
+  margin-bottom: 75px
+  h3
+    margin-bottom: 25px
+  ul
+    border-top: 1px solid #000
+    font-size: 18px
+    padding-top: 4px
+    li
+      padding: 8px 0
+      border-bottom: 1px solid #000
+      +mt(.3s)
+      &:hover
+        color: $light-green
+  &:after
+    content: ''
+    position: absolute
+    bottom: -167px
+    left: 0
+    border: 128px solid transparent
+    border-top: 40px solid #fff
+  &:before
+    content: ''
+    position: absolute
+    bottom: -180px
+    left: 0
+    border: 128px solid transparent
+    border-top: 40px solid rgba(#000, .15)
+    filter: blur(9px)
+
+.side-stocks, .side-comments
+  h3
+    padding-left: 20px
+    position: relative
+    margin-bottom: 20px
+    &:before
+      content: ''
+      position: absolute
+      height: 100%
+      width: 8px
+      background-color: $light-green
+      left: 0
+      top: 0
+
+.side-stocks
+  margin-top: 100px
+  .stock-item
+    margin-bottom: 20px
+
+.stock-item
+  min-height: 190px
+  display: block
+  +bg-cover
+  padding: 25px
+
+.more-link
+  margin-top: 10px
+  display: inline-block
+  font-size: 20px
+  font-weight: 900
+  white-space: nowrap
+  position: relative
+  border-bottom: 1px solid rgba(#000, .5)
+  line-height: 1
+  margin-left: 25px
+  +mt(.3s)
+  &:after
+    position: absolute
+    content: '>>'
+    color: $light-green
+    right: -25px
+    top: 0
+    +mt(.3s)
+  &:hover
+    border-color: transparent
+    color: $light-green
+    &:after
+      right: -30px
+
+.side-comments
+  margin-top: 70px
+  margin-bottom: 40px
+
+.side-comment
+  background-color: #f6f6f6
+  padding: 15px 25px 20px
+  position: relative
+  margin-bottom: 20px
+  &-img
+    +bg-cover
+    width: 64px
+    height: 64px
+    border-radius: 50%
+    overflow: hidden
+    margin-bottom: 15px
+  &-ratio
+    position: absolute
+    right: 25px
+    top: 33px
+    color: #c5c5c5
+    .green
+      color: $light-green
+  &-desc
+    +mt(10s)
+    max-height: 82px
+    overflow: hidden
+    p
+      margin-bottom: 0
+    &.open
+      max-height: initial
+  .roll
+    display: inline-block
+    margin-top: 10px
+    font-weight: 700
+    text-decoration: underline
+    &:hover
+      text-decoration: none

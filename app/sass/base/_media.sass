@@ -1,0 +1,502 @@
+@import vars
+
+
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1400px)
+
+  .s-main-pdesc
+    padding-top: 120px
+
+  .bg-abs-1
+    left: 0
+
+  .bg-abs-2
+    left: 0
+
+  .bg-abs-4
+    right: 0
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+  .recipelist-item-content
+    padding-left: 10px
+
+  .recipelist-item:after
+    left: 20px
+    width: calc(100% - 20px)
+
+  .order-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    .callback
+      display: inline-block
+      border: none
+      text-decoration: underline
+      max-width: 190px
+      margin-bottom: 10px
+    .btn
+      display: inline-block
+      max-width: 190px
+      text-align: center
+      margin-bottom: 20px
+
+  .s-populars
+    &:after
+      display: none
+
+  .side-catalog:after
+    bottom: -145px
+    border: 105px solid transparent
+    border-top: 40px solid #fff
+  .side-catalog:before
+    bottom: -162px
+    border: 105px solid transparent
+    border-top: 40px solid rgba(#000, .15)
+
+
+  .popular-item-img
+    height: 150px
+
+// ≥992px
++media-breakpoint-down(md)
+
+  .recipelist-item
+    &-img
+      float: none
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+    &-meta
+      display: flex
+      flex-direction: column-reverse
+      &>div
+        padding-left: 0
+      .meta-time
+        padding-left: 25px
+        &:before
+          left: 0
+      .meta-portions
+        padding-left: 30px
+        &:before
+          left: 0
+    &.active
+      .meta-portions
+        border-color: transparent
+    &:after
+      left: 0
+      width: 100%
+
+
+
+  .recipelist-item-ingredients
+    width: 100%
+
+
+
+
+  .product-thumbs-wrap
+    margin-bottom: 40px
+
+  .order-wrap
+    display: block
+    .btn
+      margin-bottom: 0
+
+  .sidebar-content-wrap
+    &:before
+      top: -10px
+
+  .ishome
+    .sidebar-content-wrap
+      &:before
+        top: -90px
+
+  .cat-item
+    &:nth-child(3n+1), &:nth-child(3n-1)
+      border-right: 1px solid #cdcdcd
+    &:nth-child(2n-1)
+      border-right: 1px solid #cdcdcd
+    &:nth-child(3)
+      border-top: none
+    &:nth-child(2n)
+      border-left: none
+  //  &:nth-child(3n)
+  //    left: 0
+  //    //top: -3px
+  //  &:nth-child(3n-1)
+  //    left: 0
+  //  &:nth-child(2n)
+  //    left: -1px
+  //  &:nth-child(3)
+  //    top: -1px
+
+  .side-catalog:after, .side-catalog:before
+    display: none
+
+  .side-stocks
+    margin-top: 50px
+
+  .foot-info
+    ul
+      margin-top: 40px
+      font-size: 16px
+
+  .about-item
+    margin-bottom: 65px
+
+  .popular-item-img
+    height: 180px
+    display: flex
+    justify-content: center
+    align-items: center
+
+  .pop-prev
+    left: 20%
+  .pop-next
+    right: 20%
+
+  .s-main-pdesc
+    padding-top: 75px
+    .container
+      padding-left: 15px
+      padding-right: 15px
+
+
+  .main-head
+    padding-bottom: 20px
+
+  .ishome
+    .main-head
+      padding-bottom: 75px
+
+  .bg-abs-2
+    bottom: -60px
+
+  .bg-abs-3
+    top: -40px
+
+  .bg-abs-4
+    bottom: -50px
+
+  .intro-content
+    padding: 35px 35px 150px 35px
+    h1
+      font-size: 36px
+      span
+        font-size: 60px
+
+
+  .main-mnu
+    display: none
+
+  .top-line
+    padding-bottom: 10px
+  .socials
+    margin-right: 12px
+    margin-top: 10px
+
+// ≥768px
++media-breakpoint-down(sm)
+
+  .order-wrap
+    .callback
+      left: 50px
+      top: 0
+
+  .sidebar-content-wrap
+    &:before
+      display: none
+
+  .stocks-items-wrap
+    margin-bottom: 0
+
+  .stock-item-wrap
+    margin-bottom: 50px
+
+  .s-map
+    padding-bottom: 50px
+
+  .main-head
+    padding-bottom: 65px
+
+  .ishome
+    .main-head
+      padding-bottom: 125px
+
+  .side-catalog
+    padding-bottom: 30px
+    margin-bottom: 50px
+
+  .ishome
+    .page-content
+      margin-top: 40px
+
+  .s-intro
+    .container
+      padding-left: 10px
+      padding-right: 10px
+    &:after
+      display: none
+
+  .bg-abs-1, .bg-abs-3
+    display: none
+  .bg-abs-4
+    top: 0
+    bottom: auto
+
+  .main-head
+    .container
+      padding: 0 10px
+    .logo-block
+      display: block
+      text-align: center
+  .socials, .callback
+    display: block
+    float: none
+    text-align: center
+    margin-bottom: 20px
+
+  .callback
+    margin-left: 0
+    margin-top: 20px
+
+  .socials
+    position: absolute
+    margin-right: 0
+    margin-top: 11px
+    right: 0
+
+  .toggle-mnu
+    position: absolute
+    left: 0
+    margin-left: 0
+
+  .top-line
+    padding-bottom: 0
+
+    .logo
+      margin-top: 5px
+
+  .logo-desc
+    .h1
+      font-size: 28px
+      margin-top: 10px
+    .h2
+      font-size: 14px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+  .form-content
+    flex-direction: column
+  .form-content-item
+    width: 100%
+
+  .s-catalog
+    .cat-item
+      margin-bottom: 20px
+      border-top: 1px solid #cdcdcd
+      &:nth-child(2n)
+        border-left: 1px solid #cdcdcd
+
+  .ishome
+    .cat-item
+      border: none
+      &:nth-child(2n-1), &:nth-child(2n)
+        border-right: none
+      &:nth-child(1), &:nth-child(2)
+        border-top: none
+
+  .ishome
+    .cat-wrap
+      border: 1px solid #cdcdcd
+      padding: 30px
+      position: relative
+    .cat-item-title
+      position: relative
+      border-bottom: 1px solid #cdcdcd
+      line-height: 1.1
+      display: inline-block
+      white-space: nowrap
+      &:after
+        content: '>>'
+        position: absolute
+        right: -30px
+        color: $light-green
+        top: 0
+
+  .ishome
+    .cat-item
+      margin-bottom: 20px
+      border: none
+      padding: 0
+      &:hover
+        transform: none
+        border: none
+        box-shadow: none
+        &:after
+          display: none
+      &-title
+        display: inline-block
+        margin-top: 0
+      &-img
+        height: auto
+        display: none
+
+  .foot-info
+    ul
+      display: none
+
+  .foot-flow
+    height: 25px
+
+  .cat-item
+    margin-left: 10px
+    margin-right: 10px
+
+  .bg-abs
+    display: none
+  .s-intro
+    &:after
+      display: block
+
+@media screen and (max-width: 480px)
+
+  .recipelist-item-ingredients
+    padding-left: 10px
+    padding-right: 10px
+    .btn
+      padding: 15px 35px
+      max-width: 300px
+      text-align: center
+      white-space: nowrap
+
+  .recipelist-item-title
+    font-size: 24px
+    padding-bottom: 20px
+
+  .popup-form
+    input, textarea
+      width: 260px
+
+  .product-wrap
+    padding-bottom: 40px
+
+  .product-img
+    height: 240px
+
+  .product-thumb
+    height: 55px
+
+  .order-wrap
+    display: flex
+    .callback
+      left: 0
+
+  .s-page
+    padding-bottom: 0
+
+  h3
+    font-size: 20px
+    margin-bottom: 5px
+
+  h2
+    font-size: 24px
+
+  .stocks-items-wrap
+    margin-top: 20px
+  .stock-item-wrap
+    margin-bottom: 30px
+
+  .main-foot
+    .socials
+      float: none
+      position: relative
+    .logo-block
+      display: block
+      text-align: center
+  .foot-info
+    text-align: center
+    .phone
+      margin-bottom: 15px
+    ul
+      text-align: left
+
+  .about-item
+    .img-wrap
+      height: 150px
+    &-content
+      &:before
+        font-size: 60px
+  .about-item-title
+    padding-left: 0
+    font-size: 20px
+    margin-bottom: 8px
+    &:after
+      left: 0
+  .about-item-desc
+    padding-left: 0
+  .about-item-img
+    height: 150px
+
+  .popular-item-img
+    height: 220px
+  .pop-prev
+    left: 10%
+  .pop-next
+    right: 10%
+  .pop-dots
+    margin-top: 30px
+
+  .popular-item
+    width: 100%
+
+  .logo-desc
+    .h1
+      font-size: 26px
+    .h2
+      font-size: 13px
+  .logo
+    margin-right: 5px
+
+  .s-main-pdesc
+    font-size: 16px
+
+  .intro-content
+    padding: 20px 15px 140px 15px
+    text-align: center
+    h1
+      font-size: 28px
+      span
+        font-size: 48px
+        text-align: center
+        margin-top: 30px
+
+
+@media screen and (max-width: 380px)
+  .ishome
+    .cat-wrap
+      padding: 30px 15px
+    .cat-item-title
+      font-size: 18px
+      position: relative
+      left: -10px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,315 @@
+@import vars
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $light-green
+  color: #fff
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.25
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+b, strong
+  font-weight: bold
+
+a, a:hover, a:active, a:focus
+  color: inherit
+  text-decoration: none
+
+a, li, button, div
+  outline: none!important
+
+ul
+  list-style-type: none
+  padding: 0
+
+.hidden
+  display: none !important
+
+
+//pixel-glass custom
+//html
+//  background-repeat: no-repeat
+//  background-position: 50% 0
+//  background-image: url('../img/layout/test.png')
+
+// ======= END TEMPLATE STYLES =======
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4
+  font-weight: 900
+  text-transform: uppercase
+  margin-top: 0
+  margin-bottom: 0
+
+h4
+  text-transform: none
+
+
+h2
+  font-size: 30px
+
+h3
+  font-size: 24px
+
+.btn
+  display: inline-block
+  border: 2px solid transparent
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 700
+  line-height: 1
+  padding: 10px 22px
+  border-radius: 50px
+  +mt(.3s)
+  cursor: pointer
+
+.btn-darkgreen
+  background-color: $dark-green
+  color: #fff
+  &:hover, &:active, &:focus
+    background-color: $light-green
+    color: #fff
+
+.btn-grad
+  background: linear-gradient(135deg, #75ad34 0%,#0b601c 100%)
+  border: none
+  text-transform: uppercase
+  color: #fff
+  +mt(.3s)
+  &:hover, &:active, &:focus
+    background: linear-gradient(135deg, #0b601c 0%, #75ad34 100%)
+    color: #fff
+.page-content
+  margin-top: 35px
+
+.ishome
+  .page-content
+    margin-top: 90px
+    position: relative
+    background: url('../img/bg-ishome.png') no-repeat right bottom
+
+
+.section-title
+  position: relative
+  text-align: center
+  &:after
+    content: ''
+    position: absolute
+    width: 60px
+    height: 7px
+    background-color: $light-green
+    bottom: -18px
+    left: calc(50% - 30px)
+
+
+//preloader
+.preloader
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10000
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #f6f6f6
+
+.sk-double-bounce
+  width: 6em
+  height: 6em
+  position: relative
+  margin: auto
+
+.sk-double-bounce .sk-child
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  background-color: $light-green
+  opacity: 0.6
+  position: absolute
+  top: 0
+  left: 0
+  animation: sk-double-bounce 2.0s infinite ease-in-out
+
+.sk-double-bounce .sk-double-bounce-2
+  animation-delay: -1.0s
+
+@-webkit-keyframes sk-double-bounce
+  0%, 100%
+    transform: scale(0)
+
+  50%
+    transform: scale(1)
+
+@keyframes sk-double-bounce
+  0%, 100%
+    transform: scale(0)
+
+  50%
+    transform: scale(1)
+//end preloader
+
+.s-breadcrumbs
+  font-size: 14px
+  color: #000
+  a
+    display: inline-block
+    margin: 0 10px
+    position: relative
+    +mt(.3s)
+    &:after
+      content: '/'
+      right: -11px
+      position: relative
+      color: #000
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+      color: #c5c5c5
+      &:after
+        display: none
+    &:hover
+      color: #c5c5c5
+      &:after
+        color: #000
+
+.page-title
+  margin-top: 20px
+
+.s-page
+  margin-top: 40px
+  padding-bottom: 50px
+
+.popup-form
+  max-width: 800px
+  margin: 10px auto
+  padding: 25px 20px
+  background-color: $dark-green
+  border: 3px solid darken($light-green, 10%)
+  text-align: center
+  border-radius: 15px
+  color: #fff
+  label
+    display: block
+    margin-bottom: 20px
+    &.has-error
+      input, textarea
+        color: rgb(185, 74, 72)
+        &::placeholder
+          color: rgb(185, 74, 72)
+  input, textarea
+    width: 400px
+    margin-left:  auto
+    margin-right: auto
+    padding: 12px 28px
+    border-radius: 13px
+    border: 2px solid $light-green
+    color: $dark-green
+    &::placeholder
+      color: $light-green
+  textarea
+    height: 150px
+    resize: none
+  .btn
+    margin-top: 30px
+    min-width: 220px
+    padding: 16px
+  .help-block
+    display: none
+
+.form-labels-wrap
+  margin-top: 40px
+
+.form-content
+  display: flex
+
+.form-content-item
+  width: 50%
+  margin-top: 40px
+  input, textarea
+    width: 100%
+
+.form-order-info
+  padding-right: 20px
+  font-size: 20px
+  span
+    font-weight: 700
+    font-size: 24px
+    display: inline-block
+.order-img
+  height: 200px
+  width: 100%
+  margin-bottom: 15px
+.order-price
+  margin-bottom: 15px
+  .product-price
+    font-size: 24px
+    font-weight: 700
+.order-quanity
+  margin-bottom: 10px
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .7
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-close
+  width: 50px
+  height: 50px
+  line-height: 50px
+.mfp-close-btn-in .mfp-close
+  color: #fff
+//end MY-MFP-ZOOM-IN
+
+.navigation
+  height: 60px

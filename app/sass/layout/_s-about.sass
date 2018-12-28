@@ -1,0 +1,68 @@
+.s-about
+  border-top: 1px solid #000
+  padding-top: 35px
+  counter-reset: about-counter
+
+.about-wrap
+  margin-top: 85px
+
+.about-item
+  position: relative
+  padding: 0 20px 20px 20px
+  display: block
+  background-color: #fff
+  margin-bottom: 50px
+  box-shadow: 0 5px 30px 3px rgba(#000, .2)
+  &-content
+    display: block
+    position: relative
+    top: -20px
+    &:before
+      counter-increment: about-counter
+      content: "0"counter(about-counter)
+      font-size: 83px
+      color: #ffffff
+      font-weight: 900
+      line-height: 1
+      position: absolute
+      top: -12px
+      left: 27px
+      z-index: 2
+  &-img
+    display: block
+    width: 100%
+    height: 190px
+    margin-bottom: 25px
+    +mt(5s)
+    +bg-cover
+  &-title
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: 900
+    padding-left: 25px
+    margin-bottom: 15px
+    display: inline-block
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 25px
+      bottom: -5px
+      height: 4px
+      width: 0
+      background-color: $light-green
+      +mt(1s)
+  &-desc
+    padding-left: 25px
+    line-height: 1.5
+  .img-wrap
+    overflow: hidden
+    height: 190px
+    margin-bottom: 25px
+  &:hover
+    .about-item-img
+      transform: scale(1.2)
+    .about-item-title
+      &:after
+        width: calc(100% - 25px)
+

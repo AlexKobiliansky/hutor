@@ -1,0 +1,172 @@
+.main-head
+  padding-bottom: 5px
+  background-color: #f6f6f6
+  .container
+    padding: 0 50px
+
+.ishome
+  .main-head
+    padding-bottom: 55px
+
+.top-line
+  position: relative
+  padding: 15px 0
+  border-bottom: 1px solid #000
+.callback, .socials
+  display: inline-block
+  float: right
+
+.logo-block
+  display: inline-block
+  vertical-align: top
+
+.logo
+  display: inline-block
+  vertical-align: top
+  margin-right: 12px
+
+.logo-desc
+  display: inline-block
+  line-height: 1
+  .h1
+    font-size: 30px
+    letter-spacing: 0.05em
+    display: block
+  .h2
+    display: block
+    font-size: 15px
+    font-weight: normal
+    text-transform: none
+    letter-spacing: 0.04em
+
+.callback
+  margin-left: 35px
+
+.socials
+  font-size: 18px
+  display: inline-block
+  padding: 6px 0
+
+.soc-item
+  position: relative
+  margin: 0 7px
+  color: #fff
+  width: 30px
+  height: 30px
+  background-color: #a0a0a0
+  display: inline-block
+  line-height: 30px
+  text-align: center
+  border-radius: 50%
+  +mt(.3s)
+  &:last-child
+    margin-right: 0
+  &:hover
+    color: #fff
+    background-color: $light-green
+
+// start MAIN MENU
+.sm-mint a, .sm-mint a:active, .sm-mint a:focus, .sm-mint a:hover
+  font-size: 18px
+  font-weight: 700
+  cursor: pointer
+  padding: 20px 25px
+  font-family: "proximaNova", sans-serif
+
+.sm-mint
+  display: flex
+  justify-content: center
+  border-bottom: 0
+
+.sm-mint a .sub-arrow
+  border-color: #000 transparent transparent transparent
+
+.sm-mint a:active, .sm-mint a:focus, .sm-mint a:hover
+  color: $light-green
+  background-color: transparent
+  padding: 20px 25px
+  .sub-arrow
+    border-color: $light-green transparent transparent transparent
+
+.sm-mint ul
+  background-color: #f6f6f6
+  border-radius: 0
+  a
+    font-family: "proximaNova", sans-serif
+
+.sm-mint a.highlighted
+  background-color: #f6f6f6
+  color: $light-green
+  padding: 20px 25px
+
+.sm-mint ul a .sub-arrow
+  border-color: transparent transparent transparent #000
+
+.sm-mint a.has-submenu
+  padding-right: 34px
+//end MAIN MENU
+
+
+//start MOBILE MENU
+.toggle-mnu
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 20px
+  margin-left: 5px
+
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 3px
+    background-color: $dark-green
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+  &.on span
+    background-color: transparent
+
+  &.on span:before
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after
+    transform: rotate(-45deg) translate(6px, -7px)
+//end MOBILE MENU
+
+.mm-menu_theme-dark
+  background-color: $dark-green
+  font-size: 16px
+  font-family: "proximaNova", sans-serif
+  text-transform: uppercase
+
+.mm-listitem>a, .mm-listitem>span
+  padding: 15px 10px 15px 20px
+
+.mm-navbar
+  font-size: 18px
+  height: 60px
+  padding-top: 10px
+  letter-spacing: .04em
+  font-family: "proximaNova", sans-serif
+
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+  margin-top: 0
+
+.mm-listitem:after, .mm-listitem .mm-btn_next:before, .mm-navbar
+  border-color: rgba(255,255,255,.4)
+
+.mm-navbar__btn:first-child
+  top: 9px

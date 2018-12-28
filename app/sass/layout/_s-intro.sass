@@ -1,0 +1,52 @@
+.s-intro
+  background: url('../img/bg-intro.jpg') no-repeat center center
+  background-size: cover
+  position: relative
+  .container
+    padding: 0 50px
+  &:after
+    content: ''
+    position: absolute
+    width: 36px
+    height: 36px
+    background-color: $light-green
+    transform: rotate(45deg)
+    left: calc(50% - 19px)
+    bottom: -18px
+
+.intro-content
+  border: 15px solid #fff
+  +bg-cover()
+  position: relative
+  top: -55px
+  padding: 65px 65px 220px 65px
+  box-shadow: 0 12px 35px 1px rgba(#000, .28)
+  z-index: 2
+  h1
+    font-size: 48px
+  span
+    text-transform: none
+    font-family: "goodVinesPro", sans-serif
+    font-size: 77px
+    font-weight: normal
+    display: block
+    text-align: right
+
+.bg-abs
+  position: absolute
+
+.bg-abs-1
+  top: -26px
+  left: 250px
+
+.bg-abs-2
+  bottom: -131px
+  left: 130px
+
+.bg-abs-3
+  right: 0
+  top: -75px
+
+.bg-abs-4
+  right: 100px
+  bottom: -115px

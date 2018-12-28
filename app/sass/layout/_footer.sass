@@ -1,0 +1,48 @@
+.main-foot
+  background-color: $dark-green
+  color: #fff
+  font-size: 20px
+  padding-top: 10px
+  .top-line
+    border-color: $light-green
+  .soc-item
+    background-color: #fff
+    color: $dark-green
+    &:hover
+      background-color: $light-green
+  ul
+    list-style-type: none
+    padding: 0
+    li
+      margin-bottom: 10px
+
+.foot-info
+  margin-top: 40px
+  padding-bottom: 15px
+  .phone
+    display: inline-block
+    font-weight: 900
+    font-size: 24px
+    margin-bottom: 30px
+  a
+    +mt(.3s)
+    display: inline-block
+    position: relative
+    font-weight: 700
+    &:after
+      position: absolute
+      content: ''
+      height: 1px
+      width: 100%
+      background-color: transparent
+      left: 0
+      bottom: 0
+      +mt(.3s)
+      opacity: .4
+    &:hover
+      color: $light-green
+      &:after
+        background-color: $light-green
+.foot-flow
+  height: 50px
+  background-color: #00430e

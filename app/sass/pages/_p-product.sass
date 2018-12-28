@@ -1,0 +1,131 @@
+.product-wrap
+  margin-top: 30px
+  padding-bottom: 75px
+
+.product-slider
+  margin-bottom: 15px
+
+.product-thumbs-wrap
+  position: relative
+  .product-thumb-next, .product-thumb-prev
+    font-size: 24px
+    cursor: pointer
+    position: absolute
+    top: 23px
+  .product-thumb-prev
+    left: 2px
+  .product-thumb-next
+    right: 2px
+
+.product-thumbs
+  margin-left: 20px
+  margin-right: 20px
+  position: relative
+
+.product-img
+  height: 300px
+  background-color: #fff
+  +bg-cover()
+  border: 1px solid #000
+
+.product-thumb
+  height: 80px
+  background-color: #fff
+  +bg-cover()
+  cursor: pointer
+  border: 1px solid #000
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: calc(100% + 2px)
+    height: calc(100% + 2px)
+    left: -1px
+    top: -1px
+    border: 2px solid transparent
+  &.swiper-slide-thumb-active
+    border-color: $light-green
+    &:before
+      border-color: $light-green
+
+.product-desc-wrap
+  padding-left: 30px
+  h4
+    text-transform: uppercase
+    margin-bottom: 8px
+    font-size: 20px
+
+.price-wrap
+  font-size: 20px
+  padding-bottom: 18px
+  border-bottom: 1px solid #a0a0a0
+  .product-price
+    font-size: 26px
+    font-weight: 700
+
+.amount-wrap
+  padding: 11px 0
+  border-bottom: 1px solid #a0a0a0
+
+#spinner-amount
+  display: inline-block
+  margin-left: 17px
+  button
+    width: 28px
+    height: 28px
+    position: relative
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      width: 12px
+      height: 2px
+      top: calc(50% - 1px)
+      left: calc(50% - 6px)
+    &.down
+      background-color: #fff
+      border: 1px solid #000
+      &:before
+        background-color: #000
+    &.up
+      &:before
+        background-color: #fff
+      &:after
+        content: ''
+        position: absolute
+        height: 12px
+        width: 2px
+        background-color: #fff
+        left: calc(50% - 1px)
+        top: calc(50% - 6px)
+      &:hover
+        background: linear-gradient(135deg, #75ad34 0%,#0b601c 100%)
+  input
+    text-align: center
+    border: none
+    font-size: 20px
+    width: 45px
+    vertical-align: top
+    height: 28px
+
+.order-wrap
+  padding: 25px 0
+  border-bottom: 1px solid #a0a0a0
+  margin-bottom: 12px
+  .callback
+    position: relative
+    text-transform: uppercase
+    font-weight: bold
+    color: $light-green
+    border-bottom: 1px solid rgba($light-green, .6)
+    top: 8px
+    +mt(.3s)
+    &:before
+      content: ''
+      position: absolute
+      width: 23px
+      height: 23px
+      background: url('../img/icons/callback-icon.png') no-repeat center center
+      left: -33px
+    &:hover
+      border-color: transparent

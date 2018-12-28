@@ -1,0 +1,114 @@
+.recipeslist-wrap
+  margin-top: 40px
+
+.recipelist-item
+  padding: 20px 0
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    height: 1px
+    width: calc(100% - 65px)
+    left: 65px
+    bottom: 0
+    background-color: #000
+  &-img
+    width: 200px
+    height: 200px
+    +bg-cover
+    float: right
+  &-content
+    padding-left: 60px
+  &-title
+    font-size: 30px
+    line-height: 1
+    font-weight: 900
+    padding: 25px 0 35px
+    display: inline-block
+    +mt(.3s)
+    &:hover
+      color: $light-green
+  &-meta
+    font-size: 0
+    &>div
+      font-size: 16px
+      display: inline-block
+      text-transform: uppercase
+      padding-top: 4px
+      padding-bottom: 10px
+    .meta-ingredients
+      padding-right: 40px
+      border-right: 1px solid transparent
+      position: relative
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        border: 6px solid transparent
+        border-top: 8px solid #000
+        right: 15px
+        top: 10px
+    .meta-portions
+      padding-left: 70px
+      padding-right: 28px
+      border-bottom: 1px solid transparent
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 22px
+        height: 16px
+        background-image: url("../img/icons/meta-portions-icon.png")
+        +bg-cover()
+        left: 35px
+    .meta-time
+      padding-left: 45px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 16px
+        height: 16px
+        background-image: url("../img/icons/meta-time-icon.png")
+        +bg-cover()
+        left: 20px
+        top: 5px
+
+.recipelist-item-ingredients
+  display: none
+  border: 1px solid #d3d3d3
+  border-top: none
+  width: 363px
+  padding-top: 25px
+  padding-right: 40px
+  padding-bottom: 20px
+  padding-left: 35px
+  font-size: 14px
+  li
+    display: table
+    width: 100%
+    margin-bottom: 10px
+    &>div
+      display: table-cell
+      vertical-align: middle
+    .ingr-name
+      width: 205px
+      padding-right: 15px
+  .btn
+    margin-top: 15px
+    padding-left: 50px
+    padding-right: 50px
+
+.recipelist-item.active
+  .meta-ingredients
+    border-right: 1px solid #d3d3d3
+    &:after
+      border: 6px solid transparent
+      border-bottom: 8px solid #000
+      top: 4px
+  .meta-portions
+    border-bottom: 1px solid #d3d3d3
+  .recipelist-item-ingredients
+    display: block
+
+
