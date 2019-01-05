@@ -68,6 +68,27 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .contact-form
+    .form-labels-wrap
+      flex-direction: column
+      label
+        width: 100%
+
+  .comment-item
+    .leftside, .rightside
+      display: block
+    .leftside
+      width: auto
+      text-align: center
+    &-img
+      margin-left: auto
+      margin-right: auto
+    &-ratio
+      margin-left: auto
+      margin-right: auto
+    &-name
+      text-align: center
+
   .recipe-item
     font-size: 16px
     padding-left: 20px
@@ -103,8 +124,6 @@
     &:after
       left: 0
       width: 100%
-
-
 
   .recipelist-item-ingredients
     width: 100%
@@ -381,6 +400,13 @@
       display: block
 
 @media screen and (max-width: 480px)
+
+  .contact-form
+    padding: 25px 15px
+
+  .comment-item
+    padding-left: 12px
+    padding-right: 12px
 
   .recipelist-item-ingredients
     padding-left: 10px

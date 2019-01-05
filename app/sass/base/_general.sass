@@ -283,6 +283,51 @@ h3
 .order-quanity
   margin-bottom: 10px
 
+
+.contact-form
+  padding: 55px 45px 40px
+  box-shadow: 0 0 45px 5px rgba(#000, .1)
+  h3
+    margin-bottom: 30px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    label
+      width: 49%
+  label
+    display: block
+    margin-bottom: 20px
+    &.has-error
+      input, textarea
+        color: rgb(185, 74, 72)
+        &::placeholder
+          color: rgb(185, 74, 72)
+  input
+    width: 100%
+    padding: 10px 27px
+  textarea
+    width: 100%
+    min-height: 200px
+    height: auto
+    resize: none
+    padding: 15px 15px 40px
+  input, textarea
+    border: 1px solid #000
+    &::placeholder
+      color: #000
+    &:focus
+      border-color: $light-green
+  .help-block
+    display: none
+  .btn
+    width: 200px
+    text-align: center
+    margin-top: 30px
+    margin-left: auto
+    margin-right: auto
+    display: block
+    padding: 17px
+
 //MY_MFP_ZOOM_IN
 .my-mfp-zoom-in
   .zoom-anim-dialog, .popup-form
@@ -313,3 +358,56 @@ h3
 
 .navigation
   height: 60px
+
+
+
+
+
+
+.more-wrap
+  position: relative
+
+// start MASKED INPUT
+.file_upload
+  display: block
+  overflow: hidden
+  font-size: 1em
+  height: 2em
+  line-height: 2em
+  position: absolute
+  right: 25px
+  bottom: 10px
+
+
+.file_upload .button, .file_upload > mark
+  display: block
+  cursor: pointer
+
+.file_upload .button
+  float: right
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  width: 8em
+  height: 100%
+  text-align: center
+
+.file_upload > mark
+  background: transparent
+  padding-left: 1em
+  text-align: right
+  font-size: 14px
+  padding-right: 27px
+
+.file_upload input[type=file]
+  position: absolute
+  top: 0
+  visibility: hidden
+
+.file_upload > .button
+  width: 15px
+  height: 30px
+  background-image: url('../img/icons/paper-clip.png')
+  +bg-cover()
+
+
+// end MASKED INPUT
