@@ -110,6 +110,13 @@ h3
   &:hover, &:active, &:focus
     background: linear-gradient(135deg, #0b601c 0%, #75ad34 100%)
     color: #fff
+  &.disabled
+    filter: grayscale(.7)
+    &:hover
+      background: linear-gradient(135deg, #75ad34 0%,#0b601c 100%)
+
+
+
 .page-content
   margin-top: 35px
 
@@ -284,7 +291,7 @@ h3
   margin-bottom: 10px
 
 
-.contact-form
+.comments-form
   padding: 55px 45px 40px
   box-shadow: 0 0 45px 5px rgba(#000, .1)
   h3
